@@ -14,7 +14,7 @@ M_WAITOK implies the non-return of NULL and makes that code path un-needed.
 In llvm, it's looking roughly (after mem2reg):
 
 ```
-%a = malloc(...., %v) # where %v is a ConstantInt
+%a = malloc(...., %v) # where %v is a ConstantInt that has the M_WAITOK bit set
 %b = bitcast .. %a ..
 %c = cmp %b, null
 ```
