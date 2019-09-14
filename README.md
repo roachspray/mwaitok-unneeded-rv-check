@@ -20,3 +20,7 @@ In llvm, it's looking roughly (after mem2reg):
 ```
 
 meant for LLVM 6.0 and needs gmake
+
+
+See [pr240545](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=240545) for this
+applied to some of the 12.0 kernel
